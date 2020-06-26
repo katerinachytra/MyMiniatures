@@ -2,10 +2,8 @@ import numpy as np
 
 def sphere(img, n):
     dose = []
-    R = np.mean(img.shape) / 2
-    print(R)
+    R = np.mean(img.shape) / 2   
     z_d, y_d, x_d = img.shape[0], img.shape[1], img.shape[2]
-    print(img.shape)
     Coordin = np.meshgrid(np.linspace(-z_d + 1, z_d - 1, z_d), np.linspace(-y_d + 1, y_d - 1, y_d),
                           np.linspace(-x_d + 1, x_d - 1, x_d))
    
